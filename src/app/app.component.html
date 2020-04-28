@@ -1,0 +1,16 @@
+<nav>
+  <a routerLink="/login" routerLinkActive="active">Go to Login</a>
+  <a routerLink="/empleyees" routerLinkActive="active">Register Employee</a>
+  <a routerLink="/fetchObs" routerLinkActive="active">EmployeeListObservable</a>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div> 
+
+<div class="container">
+  <app-online-status 
+    [onlineStatusMessage]="connectionStatusMessage" 
+    [onlineStatus]="connectionStatus">
+  </app-online-status>
+</div>
